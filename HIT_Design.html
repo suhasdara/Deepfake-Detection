@@ -1,0 +1,146 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<crowd-form>
+   <h2>Deepfake detection</h2>
+   <p><strong>This is an academic research on Deepfakes.</strong></p>
+   <p><strong>Please only proceed if you are willing to share your demographic information.</strong></p>
+   <br>
+   <p>Deepfakes are images or videos that are created with the use of artificial intelligence.</p>
+   <p>The person portrayed in a Deepfake looks completely real but is created artificially and</p>
+   <p>does not exist in reality.</p>
+   <br>
+   <p>Deepfakes are really harmful as they are often used to propagate misinformation through the</p>
+   <p>use of artificially created media of famous figures saying things they never actually said.</p>
+   <p>Our experiment is to see if humans can distinguish between Real and Deepfake media.</p>
+   <p>We thank you for your contribution!</p>
+   <br>
+   <h3>Instructions</h3>
+   <p><strong>Inspect</strong> the images and videos carefully.</p>
+   <p><strong>Choose</strong> if you think the image or video is real or a deepfake.</p>
+   <p><strong>Read</strong> the survey instructions before taking the survey</p>
+   <p><strong>Complete</strong> the survey and paste the 5-digit completion code.</p>
+   <p><em><strong>We strongly suggest using a full screen desktop window to maximum media size</em></strong></p>
+   <br>
+   <h3>Image 1: Real or Deepfake?</h3>
+   <classification-target>
+      <img class="media" src="{{ task.input.source-ref | grant_read_access }}">
+   </classification-target>
+   <br>
+   <br>
+   <crowd-radio-group>
+      <input type="radio" id="real1" name="image1" value="real" required/>
+      <label for="real1" class="radio">Real</label><br>
+      <input type="radio" id="fake1" name="image1" value="fake"/>
+      <label for="fake1" class="radio">Deepfake</label><br>
+   </crowd-radio-group>
+   <br>
+   <br>
+   <h3>Image 2: Real or Deepfake?</h3>
+   <classification-target>
+      <img class="media" src="{{ task.input.element2 | grant_read_access }}">
+   </classification-target>
+   <br>
+   <br>
+   <crowd-radio-group>
+      <input type="radio" id="real2" name="image2" value="real" required/>
+      <label for="real2" class="radio">Real</label><br>
+      <input type="radio" id="fake2" name="image2" value="fake"/>
+      <label for="fake2" class="radio">Deepfake</label><br>
+   </crowd-radio-group>
+   <br>
+   <br>
+   <h3>Image rationale</h3>
+   <p><label for="imagerationale">Provide some reasoning or markers you used to determine whether the images were real or fake:</label></p>
+   <textarea class="rationale" id="imagerationale" name="imagerationale" required></textarea>
+   <br>
+   <br>
+   <h3>Video 1: Real or Deepfake?</h3>
+   <classification-target>
+      <video class="media" controls/>
+         <source src="{{ task.input.element3 | grant_read_access}}" type="video/mp4"/>
+         Your browser does not support the video tag.
+      </video>
+   </classification-target>
+   <br>
+   <br>
+   <crowd-radio-group>
+      <input type="radio" id="real3" name="video1" value="real" required/>
+      <label for="real3" class="radio">Real</label><br>
+      <input type="radio" id="fake3" name="video1" value="fake"/>
+      <label for="fake3" class="radio">Deepfake</label><br>
+   </crowd-radio-group>
+   <br>
+   <br>
+   <h3>Video 2: Real or Deepfake?</h3>
+   <classification-target>
+      <video class="media" controls/>
+         <source src="{{ task.input.element4 | grant_read_access}}" type="video/mp4"/>
+         Your browser does not support the video tag.
+      </video>
+   </classification-target>
+   <br>
+   <br>
+   <crowd-radio-group>
+      <input type="radio" id="real4" name="video2" value="real" required/>
+      <label for="real4" class="radio">Real</label><br>
+      <input type="radio" id="fake4" name="video2" value="fake"/>
+      <label for="fake4" class="radio">Deepfake</label><br>
+   </crowd-radio-group>
+   <br>
+   <br>
+   <h3>Video rationale</h3>
+   <p><label for="videorationale">Provide some reasoning or markers you used to determine whether the videos were real or fake:</label></p>
+   <textarea class="rationale" id="videorationale" name="videorationale" required></textarea>
+   
+   <full-instructions header="Deepfake Media classification instructions">
+      <ul>
+         <li><strong>Inspect</strong> the images and videos carefully.</li>
+         <li><strong>Choose</strong> if you think the image or video is real or a deepfake.</li>
+         <li><strong>Read</strong> the survey instructions before taking the survey.</li>
+         <li><strong>Complete</strong> the survey and paste the 5-digit completion code.</li>
+      </ul>
+   </full-instructions>
+   <short-instructions>
+      <ul>
+         <li><strong>Inspect</strong> the images and videos carefully.</li>
+         <li><strong>Choose</strong> if you think the image or video is real or a deepfake.</li>
+         <li><strong>Read</strong> the survey instructions before taking the survey.</li>
+         <li><strong>Complete</strong> the survey and paste the 5-digit completion code.</li>
+      </ul>
+   </short-instructions>
+   
+   <br>
+   <br>
+   <br>
+   <p><strong>Before you submit, please read the instructions below and take the demographic survey here: <a href="https://utexas.qualtrics.com/jfe/form/SV_cIOJyGx3SSaQ0nz" target="_blank">Survey</a></strong></p>
+   <p>The survey will give you a 5-digit <em>"Survey completion code"</em></p>
+   <p>Please paste the completion code in the input below.</p>
+   <p>We also advise to <strong>copy the code</strong> for reference</p>
+   <p>This is so that you do not have to fill out the demographic information for multiple HITs</p>
+   <input type="text" id="code" name="code" placeholder="Please paste the code from the survey (required)"required></input>
+   
+   <br>
+   <br>
+</crowd-form>
+
+<style>
+   .media {
+      max-height: 640px;
+      max-width: 100vw;
+   }
+   
+   #code {
+      width: 640px;
+      height: 30px;
+      display: inline-block;
+   }
+   
+   .radio {
+      font-size: 16px;
+      font-weight: bold;
+   }
+
+   .rationale {
+      width: 500px;
+      height: 80px;
+   }
+</style>
