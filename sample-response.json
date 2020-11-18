@@ -1,0 +1,36 @@
+{
+  "answers": [
+    {
+      "answerContent": {
+        "code": "asdasd",
+        "image1": {
+          "fake": false,
+          "real": true
+        },
+        "image2": {
+          "fake": true,
+          "real": false
+        },
+        "imagerationale": "aaa",
+        "video1": {
+          "fake": false,
+          "real": true
+        },
+        "video2": {
+          "fake": false,
+          "real": true
+        },
+        "videorationale": "asdasd"
+      },
+      "submissionTime": "2020-11-17T21:09:35.257Z",
+      "workerId": "private.us-east-1.33baede55e9f1a05",
+      "workerMetadata": {
+        "identityData": {
+          "identityProviderType": "Cognito",
+          "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_gYyYeVCp6",
+          "sub": "39b8bfed-3b56-4dd1-a294-80b76f70a609"
+        }
+      }
+    }
+  ]
+}
