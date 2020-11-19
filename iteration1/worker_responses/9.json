@@ -1,0 +1,129 @@
+{
+  "answers": [
+    {
+      "answerContent": {
+        "code": "53774",
+        "image1": {
+          "fake": false,
+          "real": true
+        },
+        "image2": {
+          "fake": false,
+          "real": true
+        },
+        "imagerationale": "I didn't see anything that looks fake on these images.",
+        "video1": {
+          "fake": false,
+          "real": true
+        },
+        "video2": {
+          "fake": false,
+          "real": true
+        },
+        "videorationale": "I didn't notice anything out of place. "
+      },
+      "submissionTime": "2020-11-17T23:54:37Z",
+      "workerId": "public.us-east-1.AY0758IITCGOZ"
+    },
+    {
+      "answerContent": {
+        "code": "46809",
+        "image1": {
+          "fake": false,
+          "real": true
+        },
+        "image2": {
+          "fake": false,
+          "real": true
+        },
+        "imagerationale": "I didn't notice anything unusual.",
+        "video1": {
+          "fake": false,
+          "real": true
+        },
+        "video2": {
+          "fake": true,
+          "real": false
+        },
+        "videorationale": "In the second video the man had much more artifacts than the background."
+      },
+      "submissionTime": "2020-11-18T00:14:26Z",
+      "workerId": "public.us-east-1.A36FBIDN58N139"
+    },
+    {
+      "answerContent": {
+        "code": "26556",
+        "image1": {
+          "fake": false,
+          "real": true
+        },
+        "image2": {
+          "fake": false,
+          "real": true
+        },
+        "imagerationale": "the texture of the skin",
+        "video1": {
+          "fake": false,
+          "real": true
+        },
+        "video2": {
+          "fake": false,
+          "real": true
+        },
+        "videorationale": "All expressions looked real to me"
+      },
+      "submissionTime": "2020-11-18T00:17:51Z",
+      "workerId": "public.us-east-1.A3V4UX3FRT3KJU"
+    },
+    {
+      "answerContent": {
+        "code": "44888",
+        "image1": {
+          "fake": false,
+          "real": true
+        },
+        "image2": {
+          "fake": false,
+          "real": true
+        },
+        "imagerationale": "I don't see any edits in the image.",
+        "video1": {
+          "fake": false,
+          "real": true
+        },
+        "video2": {
+          "fake": true,
+          "real": false
+        },
+        "videorationale": "The video is a little strange, with several bugs."
+      },
+      "submissionTime": "2020-11-18T00:22:31Z",
+      "workerId": "public.us-east-1.A18CLI0LF3RE3C"
+    },
+    {
+      "answerContent": {
+        "code": "24733",
+        "image1": {
+          "fake": false,
+          "real": true
+        },
+        "image2": {
+          "fake": true,
+          "real": false
+        },
+        "imagerationale": "1. Seems real\n2. Wrinkles below eyes?",
+        "video1": {
+          "fake": true,
+          "real": false
+        },
+        "video2": {
+          "fake": true,
+          "real": false
+        },
+        "videorationale": "Shadows. 1st one did not have them and 2nd one-> shadows seemed not to right. Maybe I`m already overreacting..."
+      },
+      "submissionTime": "2020-11-18T00:41:58Z",
+      "workerId": "public.us-east-1.A16QZSBYXE5VY8"
+    }
+  ]
+}
